@@ -9,5 +9,5 @@ import java.util.List;
  * Email: yaoyaolingma@126.com
  */
 public interface IGreetingBusiness {
-    List<Customer> accessMysqlWithJdbc();
+    List<Customer> accessMysqlWithJdbcd();
 }
