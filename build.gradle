@@ -27,8 +27,11 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")// [spring-web]
     compile("org.springframework.boot:spring-boot-starter-jdbc")// [spring-jdbc] [accessMysqlWithJdbc]
+    compile("org.springframework.boot:spring-boot-starter-amqp")// [spring-amqp]
     compile("com.fasterxml.jackson.core:jackson-databind")// [consumingMsg]
     compile("mysql:mysql-connector-java")
+
+
     testCompile("junit:junit")
 }
 

@@ -46,4 +46,10 @@ public class GreetingController {
     public List<Customer> accessMysqlWithJdbc() {
         return greetingBusiness.accessMysqlWithJdbc();
     }
+
+    @RequestMapping("/testRabbitmq")
+    public String testRabbitmq() {
+        greetingBusiness.testRabbitmq();
+        return "ok!";
+    }
 }
