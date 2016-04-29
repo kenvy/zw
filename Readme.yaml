@@ -12,6 +12,6 @@ Spring:
 Rabbitmq:
    full-name: rabbitmq-server-3.6.1
 
-# Neo4j
+# Neo4j [optional: rest]
 Neo4j:
 
