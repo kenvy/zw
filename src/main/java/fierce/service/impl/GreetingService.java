@@ -6,12 +6,15 @@ import fierce.entity.Customer;
 import fierce.entity.Person;
 import fierce.service.IGreetingService;
 import org.neo4j.graphdb.Transaction;
+import org.neo4j.io.fs.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.core.GraphDatabase;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -51,6 +54,7 @@ public class GreetingService implements IGreetingService {
 
     @Override
     public void testNeo4j_NoSql_db() {
+
         Person greg = new Person("Greg");
         Person roy = new Person("Roy");
         Person craig = new Person("Craig");
