@@ -19,4 +19,9 @@ public interface IGreetingBusiness {
      * Simple Rabbitmq
      */
     void testRabbitmq();
+
+    /**
+     * test neo4j [crud]
+     */
+    void testNeo4j_NoSql_db();
 }
