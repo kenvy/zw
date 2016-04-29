@@ -1,16 +1,18 @@
 package fierce.dao.impl;
 
+import fierce.conf.RabbitmqConfiguration;
 import fierce.dao.IGreetingDao;
 import fierce.entity.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -22,6 +24,9 @@ public class GreetingDao implements IGreetingDao {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    RabbitTemplate rabbitTemplate;
 
     private static final Logger log = LoggerFactory.getLogger("GreetingDao");
 
@@ -56,5 +61,25 @@ public class GreetingDao implements IGreetingDao {
         customers.forEach(customer -> log.info(customer.toString()));
 
         return customers;
+    }
+
+    /**
+     * Simple Rabbitmq
+     */
+    @Override
+    public void testRabbitmq() {
+        System.out.println("Waiting five seconds...");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Sending message...");
+        rabbitTemplate.convertAndSend(RabbitmqConfiguration.queueName, "Hello from RabbitMQ!");
+        try {
+            RabbitmqConfiguration.receiver().getLatch().await(10000, TimeUnit.MILLISECONDS);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

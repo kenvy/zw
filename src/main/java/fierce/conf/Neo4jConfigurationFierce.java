@@ -11,14 +11,14 @@ import org.springframework.data.neo4j.config.Neo4jConfiguration;
  * Created by Fierce on 2016/4/29.
  */
 @Configuration
-@EnableNeo4jRepositories
+@EnableNeo4jRepositories(basePackages = "fierce")
 public class Neo4jConfigurationFierce extends Neo4jConfiguration {
 
     public Neo4jConfigurationFierce() {
         setBasePackage("fierce");
     }
 
-    @Bean(destroyMethod = "shutdown")
+    @Bean
     public GraphDatabaseService graphDatabaseService() {
         return new GraphDatabaseFactory().newEmbeddedDatabase("target/hello.db");
     }

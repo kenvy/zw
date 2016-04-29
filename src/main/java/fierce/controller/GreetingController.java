@@ -52,4 +52,10 @@ public class GreetingController {
         greetingBusiness.testRabbitmq();
         return "ok!";
     }
+
+    @RequestMapping("/testNeo4j")
+    public String testNeo4j_NoSql_db() {
+        greetingBusiness.testNeo4j_NoSql_db();
+        return "ok!";
+    }
 }

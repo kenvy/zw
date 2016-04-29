@@ -12,4 +12,7 @@ public interface IGreetingService {
 
     List<Customer> accessMysqlWithJdbc();
 
+    void testRabbitmq();
+
+    void testNeo4j_NoSql_db();
 }

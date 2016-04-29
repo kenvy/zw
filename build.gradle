@@ -33,8 +33,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-amqp' // [spring-amqp] [testRabbitmq]
     compile 'com.fasterxml.jackson.core:jackson-databind' // [consumingMsg]
 
-    //compile("org.springframework.boot:spring-boot-starter-data-rest")// [neo4j]
-    compile("org.springframework.data:spring-data-neo4j")
+    compile("org.springframework.data:spring-data-neo4j") // // [neo4j]
     compile("org.hibernate:hibernate-validator")
 
     compile 'mysql:mysql-connector-java'

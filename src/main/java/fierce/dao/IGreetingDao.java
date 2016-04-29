@@ -15,4 +15,7 @@ public interface IGreetingDao {
     void updateWithBatch();
 
     List<Customer> selectCustomersByName();
+
+    void testRabbitmq();
+
 }
