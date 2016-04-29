@@ -1,5 +1,7 @@
 package fierce.business.impl;
 
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.rabbitmq.tools.json.JSONUtil;
 import fierce.business.IGreetingBusiness;
 import fierce.conf.RabbitmqConfiguration;
 import fierce.entity.Customer;

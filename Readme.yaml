@@ -8,3 +8,6 @@ Spring:
    Spring Framework: 4.2.5
    Spring Boot + Gradle: 1.3.3
 
+# Rabbitmq
+Rabbitmq:
+   full-name: rabbitmq-server-3.6.1
