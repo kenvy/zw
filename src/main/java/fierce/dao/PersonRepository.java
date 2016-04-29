@@ -12,4 +12,6 @@ public interface PersonRepository extends CrudRepository<Person, Long> {
 
     List<Person> findByLastName(@Param("name") String name);
 
+    List<Person> findByTeammatesName(String name);
+
 }
