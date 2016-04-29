@@ -3,6 +3,9 @@
 Java:
    version: 1.8
 
+# Gradle
+Gradle: 2.9
+
 # Spring
 Spring:
    Spring Framework: 4.2.5
@@ -10,6 +13,7 @@ Spring:
 
 # Mysql
 Mysql:
+   5.x
 
 # Rabbitmq
 Rabbitmq:
