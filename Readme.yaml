@@ -13,11 +13,20 @@ Spring:
 
 # Mysql
 Mysql:
-   5.x
+   5.7 windows
+   my.default.ini改名为my.ini放到bin目录
+   mysqld --initialize --user=mysql --console
+   记下临时密码
+   启动服务.
+   mysql -uroot -p **
+   set password = password('root')
+
 
 # Rabbitmq
 Rabbitmq:
    full-name: rabbitmq-server-3.6.1
+   rabbitmqctl  add_user  zhangwei  zhangwei
+   rabbitmqctl  set-permissions -p / zhangwei .* .* .*
 
 # Neo4j [optional: rest]
 Neo4j:
