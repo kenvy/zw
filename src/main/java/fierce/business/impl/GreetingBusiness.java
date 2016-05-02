@@ -41,4 +41,12 @@ public class GreetingBusiness implements IGreetingBusiness {
     public void testNeo4j_NoSql_db() {
         greetingService.testNeo4j_NoSql_db();
     }
+
+    /**
+     * test jms
+     */
+    @Override
+    public void testJms() {
+        greetingService.testJms();
+    }
 }

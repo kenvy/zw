@@ -6,15 +6,16 @@ import fierce.entity.Customer;
 import fierce.entity.Person;
 import fierce.service.IGreetingService;
 import org.neo4j.graphdb.Transaction;
-import org.neo4j.io.fs.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.core.GraphDatabase;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
+import org.springframework.util.FileSystemUtils;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -33,6 +34,8 @@ public class GreetingService implements IGreetingService {
     @Autowired
     GraphDatabase graphDatabase;
 
+    @Autowired
+    JmsTemplate jmsTemplate;
 
     private static final Logger log = LoggerFactory.getLogger("GreetingService");
 
@@ -104,6 +107,16 @@ public class GreetingService implements IGreetingService {
             tx.close();
         }
 
+    }
+
+    @Override
+    public void testJms() {
+        // Clean out any ActiveMQ data from a previous run
+        FileSystemUtils.deleteRecursively(new File("activemq-data"));
+        // Send a message
+        MessageCreator messageCreator = session -> session.createTextMessage("ping!");
+        System.out.println("Sending a new message.");
+        jmsTemplate.send("mailbox-destination", messageCreator);
     }
 
 }

@@ -58,4 +58,10 @@ public class GreetingController {
         greetingBusiness.testNeo4j_NoSql_db();
         return "ok!";
     }
+
+    @RequestMapping("/testJms")
+    public String testJms() {
+        greetingBusiness.testJms();
+        return "ok!";
+    }
 }

@@ -33,8 +33,13 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-amqp' // [spring-amqp] [testRabbitmq]
     compile 'com.fasterxml.jackson.core:jackson-databind' // [consumingMsg]
 
-    compile("org.springframework.data:spring-data-neo4j") // // [neo4j]
-    compile("org.hibernate:hibernate-validator")
+    compile('org.springframework.data:spring-data-neo4j') // [neo4j]
+    compile('org.hibernate:hibernate-validator')
+
+    compile('org.springframework:spring-jms')// jms
+    compile fileTree(dir: 'lib', include: ['*.jar'])
+    compile("org.apache.activemq:activemq-broker")
+
 
     compile 'mysql:mysql-connector-java'
 

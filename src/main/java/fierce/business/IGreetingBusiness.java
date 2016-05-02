@@ -24,4 +24,9 @@ public interface IGreetingBusiness {
      * test neo4j [crud]
      */
     void testNeo4j_NoSql_db();
+
+    /**
+     * test jms
+     */
+    void testJms();
 }

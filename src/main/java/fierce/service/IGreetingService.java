@@ -15,4 +15,6 @@ public interface IGreetingService {
     void testRabbitmq();
 
     void testNeo4j_NoSql_db();
+
+    void testJms();
 }
