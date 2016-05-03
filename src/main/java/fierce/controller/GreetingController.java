@@ -3,10 +3,13 @@ package fierce.controller;
 import fierce.business.IGreetingBusiness;
 import fierce.entity.Customer;
 import fierce.entity.Greeting;
+import fierce.entity.GreetingHypermedia;
 import fierce.entity.Quote;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +17,9 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
+
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 /**
  * Created by zw on 2016/4/21
@@ -34,6 +40,16 @@ public class GreetingController {
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
+    }
+
+    @RequestMapping("/testHypermedia")
+    public ResponseEntity<GreetingHypermedia> greetingHypermedia(
+            @RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+
+        GreetingHypermedia greetingHypermedia = new GreetingHypermedia(String.format(template, name));
+        greetingHypermedia.add(linkTo(methodOn(GreetingController.class).greetingHypermedia(name)).withSelfRel());
+
+        return new ResponseEntity<>(greetingHypermedia, HttpStatus.OK);
     }
 
     @RequestMapping("/consuming-msg")
