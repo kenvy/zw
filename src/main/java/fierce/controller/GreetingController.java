@@ -78,7 +78,7 @@ public class GreetingController {
         return "ok!";
     }
 
-    @RequestMapping("testGemfire")
+    @RequestMapping("/testGemfire")
     public QuoteGemfire testGemfire(@RequestParam(value = "id", required = true, defaultValue = "1") Long id) {
         return greetingBusiness.testGemfire(id);
     }
