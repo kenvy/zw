@@ -44,7 +44,7 @@ dependencies {
     testCompile("com.jayway.jsonpath:json-path")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 
-    compile("org.springframework.boot:spring-boot-starter-data-gemfire") // cache data with gemfire
+    compile("org.springframework.boot:spring-boot-starter-data-gemfire") // cache data with gemfire [not work]
     runtime("org.springframework.shell:spring-shell:1.0.0.RELEASE")
 
     compile 'mysql:mysql-connector-java'
