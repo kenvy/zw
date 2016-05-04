@@ -7,6 +7,8 @@ package fierce.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @SuppressWarnings("unused")
@@ -18,10 +20,12 @@ public class QuoteResponse {
     @JsonProperty("type")
     private String status;
 
+    @Cacheable("Quotes")
     public QuoteGemfire getQuote() {
         return quote;
     }
 
+    @CacheEvict(value = "Quotes", allEntries=true)
     public void setQuote(final QuoteGemfire quote) {
         this.quote = quote;
     }

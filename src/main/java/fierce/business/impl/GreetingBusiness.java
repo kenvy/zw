@@ -2,7 +2,9 @@ package fierce.business.impl;
 
 import fierce.business.IGreetingBusiness;
 import fierce.entity.Customer;
+import fierce.entity.QuoteGemfire;
 import fierce.service.IGreetingService;
+import fierce.service.IQuoteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,9 @@ public class GreetingBusiness implements IGreetingBusiness {
 
     @Autowired
     IGreetingService greetingService;
+
+    @Autowired
+    IQuoteService quoteService;
 
     public List<Customer> accessMysqlWithJdbc() {
         return greetingService.accessMysqlWithJdbc();
@@ -48,5 +53,13 @@ public class GreetingBusiness implements IGreetingBusiness {
     @Override
     public void testJms() {
         greetingService.testJms();
+    }
+
+    /**
+     * test gemfire
+     */
+    @Override
+    public QuoteGemfire testGemfire(Long id) {
+        return quoteService.testGemfire(id);
     }
 }

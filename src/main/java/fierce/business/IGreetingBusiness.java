@@ -1,6 +1,7 @@
 package fierce.business;
 
 import fierce.entity.Customer;
+import fierce.entity.QuoteGemfire;
 
 import java.util.List;
 
@@ -29,4 +30,10 @@ public interface IGreetingBusiness {
      * test jms
      */
     void testJms();
+
+
+    /**
+     * test gemfire
+     */
+    QuoteGemfire testGemfire(Long id);
 }

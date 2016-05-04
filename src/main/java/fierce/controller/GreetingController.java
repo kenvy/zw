@@ -1,10 +1,7 @@
 package fierce.controller;
 
 import fierce.business.IGreetingBusiness;
-import fierce.entity.Customer;
-import fierce.entity.Greeting;
-import fierce.entity.GreetingHypermedia;
-import fierce.entity.Quote;
+import fierce.entity.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -79,5 +76,10 @@ public class GreetingController {
     public String testJms() {
         greetingBusiness.testJms();
         return "ok!";
+    }
+
+    @RequestMapping("testGemfire")
+    public QuoteGemfire testGemfire(@RequestParam(value = "id", required = true, defaultValue = "1") Long id) {
+        return greetingBusiness.testGemfire(id);
     }
 }
