@@ -1,14 +1,17 @@
 package fierce.service.impl;
 
+import fierce.dao.CustomerMongodbRepository;
 import fierce.dao.IGreetingDao;
 import fierce.dao.PersonRepository;
 import fierce.entity.Customer;
+import fierce.entity.CustomerMongodb;
 import fierce.entity.Person;
 import fierce.service.IGreetingService;
 import org.neo4j.graphdb.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.neo4j.core.GraphDatabase;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
@@ -36,6 +39,9 @@ public class GreetingService implements IGreetingService {
 
     @Autowired
     JmsTemplate jmsTemplate;
+
+    @Autowired
+    CustomerMongodbRepository customerMongodbRepository;
 
     private static final Logger log = LoggerFactory.getLogger("GreetingService");
 
@@ -117,6 +123,30 @@ public class GreetingService implements IGreetingService {
         MessageCreator messageCreator = session -> session.createTextMessage("ping!");
         System.out.println("Sending a new message.");
         jmsTemplate.send("mailbox-destination", messageCreator);
+    }
+
+    @Override
+    public void testMongodb() {
+        customerMongodbRepository.deleteAll();
+
+        // save a couple of customers
+        customerMongodbRepository.save(new CustomerMongodb("Alice", "Smith"));
+        customerMongodbRepository.save(new CustomerMongodb("Bob", "Smith"));
+
+        // fetch all customers
+        System.out.println("Customers found with findAll() order by firstName desc:");
+        System.out.println("-------------------------------");
+        customerMongodbRepository.findAll(new Sort(Sort.Direction.DESC, "firstName")).forEach(System.out::println);
+        System.out.println();
+
+        // fetch an individual customer
+        System.out.println("CustomerMongodb found with findByFirstName('Alice'):");
+        System.out.println("--------------------------------");
+        System.out.println(customerMongodbRepository.findByFirstName("Alice"));
+
+        System.out.println("Customers found with findByLastName('Smith'):");
+        System.out.println("--------------------------------");
+        customerMongodbRepository.findByLastName("Smith").forEach(System.out::println);
     }
 
 }

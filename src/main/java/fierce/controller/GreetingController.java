@@ -82,4 +82,10 @@ public class GreetingController {
     public QuoteGemfire testGemfire(@RequestParam(value = "id", required = true, defaultValue = "1") Long id) {
         return greetingBusiness.testGemfire(id);
     }
+
+    @RequestMapping("/testMongodb")
+    public String testMongodb() {
+        greetingBusiness.testMongodb();
+        return "ok!";
+    }
 }

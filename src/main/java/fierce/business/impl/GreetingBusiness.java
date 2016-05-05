@@ -62,4 +62,12 @@ public class GreetingBusiness implements IGreetingBusiness {
     public QuoteGemfire testGemfire(Long id) {
         return quoteService.testGemfire(id);
     }
+
+    /**
+     * test mongodb
+     */
+    @Override
+    public void testMongodb() {
+        greetingService.testMongodb();
+    }
 }

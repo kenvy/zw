@@ -17,4 +17,6 @@ public interface IGreetingService {
     void testNeo4j_NoSql_db();
 
     void testJms();
+
+    void testMongodb();
 }

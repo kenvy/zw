@@ -36,4 +36,9 @@ public interface IGreetingBusiness {
      * test gemfire
      */
     QuoteGemfire testGemfire(Long id);
+
+    /**
+     * test mongodb
+     */
+    void testMongodb();
 }
