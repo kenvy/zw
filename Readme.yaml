@@ -22,7 +22,7 @@ Mysql:
 Rabbitmq:
    version: 3.6.1
 
-# mongodb
+# Mongodb
 mongodb:
    version: 3.2.6
 
