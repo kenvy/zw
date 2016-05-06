@@ -1,0 +1,32 @@
+package fierce.service.impl;
+
+import fierce.entity.User;
+import fierce.service.IGitHubLookupService;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.AsyncResult;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.concurrent.Future;
+
+/**
+ * Created by zw on 2016/5/6
+ * Email: yaoyaolingma@126.com
+ */
+@Service
+public class GitHubLookupService implements IGitHubLookupService {
+    RestTemplate restTemplate = new RestTemplate();
+
+    @Async
+    public Future<User> findUser(String user) throws InterruptedException {
+        System.out.println("Looking up " + user);
+        User results = restTemplate.getForObject("https://api.github.com/users/" + user, User.class);
+        /*User results = new User();
+        results.setName("zhangwei");
+        results.setBlog("zhangwei.com.cn");*/
+
+        // Artificial delay of 1s for demonstration purposes
+        Thread.sleep(1000L);
+        return new AsyncResult<>(results);
+    }
+}

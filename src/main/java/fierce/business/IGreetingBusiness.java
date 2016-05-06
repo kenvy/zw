@@ -41,4 +41,6 @@ public interface IGreetingBusiness {
      * test mongodb
      */
     void testMongodb();
+
+    void testAsy();
 }

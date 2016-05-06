@@ -88,4 +88,10 @@ public class GreetingController {
         greetingBusiness.testMongodb();
         return "ok!";
     }
+
+    @RequestMapping("/testAsy")
+    public String testAsy() {
+        greetingBusiness.testAsy();
+        return "ok!";
+    }
 }
