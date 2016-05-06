@@ -33,23 +33,25 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-amqp' // [spring-amqp] [testRabbitmq]
     compile 'com.fasterxml.jackson.core:jackson-databind' // [consumingMsg]
 
-    compile('org.springframework.data:spring-data-neo4j') // [neo4j]
-    compile('org.hibernate:hibernate-validator')
+    compile 'org.springframework.data:spring-data-neo4j' // [neo4j]
+    compile 'org.hibernate:hibernate-validator'
 
-    compile('org.springframework:spring-jms') // jms
+    compile 'org.springframework:spring-jms' // jms
     compile fileTree(dir: 'lib', include: ['*.jar'])
-    compile("org.apache.activemq:activemq-broker")
+    compile 'org.apache.activemq:activemq-broker'
 
-    compile("org.springframework.boot:spring-boot-starter-hateoas") // hypermedia-driven restful
-    testCompile("com.jayway.jsonpath:json-path")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    compile 'org.springframework.boot:spring-boot-starter-hateoas' // hypermedia-driven restful
+    testCompile 'com.jayway.jsonpath:json-path'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
 
-    compile("org.springframework.boot:spring-boot-starter-data-gemfire") // cache data with gemfire
-    runtime("org.springframework.shell:spring-shell:1.0.0.RELEASE")
+    compile 'org.springframework.boot:spring-boot-starter-data-gemfire' // cache data with gemfire
+    runtime 'org.springframework.shell:spring-shell:1.0.0.RELEASE'
 
     compile 'mysql:mysql-connector-java'
 
-    compile("org.springframework.boot:spring-boot-starter-data-mongodb") // work with mongodb
+    compile 'org.springframework.boot:spring-boot-starter-data-mongodb' // work with mongodb
+
+    compile 'org.springframework.boot:spring-boot-starter-actuator' // http://localhost:8099/actuator
 
     testCompile 'junit:junit'
 }
