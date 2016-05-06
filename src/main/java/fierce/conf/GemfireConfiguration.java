@@ -24,7 +24,7 @@ public class GemfireConfiguration {
         Properties gemfireProperties = new Properties();
         gemfireProperties.setProperty("name", "DataGemFireCachingApplication");
         gemfireProperties.setProperty("mcast-port", "0");
-        gemfireProperties.setProperty("log-level", "config");// [lowest to highest are fine, config, info, warning, error, severe, and none.]
+        gemfireProperties.setProperty("log-level", "warning");// [lowest to highest are fine, config, info, warning, error, severe, and none.]
         return gemfireProperties;
     }
 
