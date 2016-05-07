@@ -7,6 +7,7 @@ import fierce.entity.User;
 import fierce.service.IGitHubLookupService;
 import fierce.service.IGreetingService;
 import fierce.service.IQuoteService;
+import fierce.service.IWeatherService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,9 @@ public class GreetingBusiness implements IGreetingBusiness {
 
     @Autowired
     IGitHubLookupService gitHubLookupService;
+
+    @Autowired
+    IWeatherService weatherService;
 
     public List<Customer> accessMysqlWithJdbc() {
         return greetingService.accessMysqlWithJdbc();
@@ -104,5 +108,10 @@ public class GreetingBusiness implements IGreetingBusiness {
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void testWs() {
+        weatherService.testWs();
     }
 }

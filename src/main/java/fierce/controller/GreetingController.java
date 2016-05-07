@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -100,11 +99,17 @@ public class GreetingController {
     }
 
     @RequestMapping("/testSitePreference")
-    public String testSp(SitePreference sitePreference,HttpServletRequest request) {
+    public String testSp(SitePreference sitePreference) {
         if (sitePreference != null) {
             return "Hello " + sitePreference.name() + " site preference!";
         } else {
             return "SitePreference is not configured.";
         }
+    }
+
+    @RequestMapping("/testWs")
+    public String testWs() {
+        greetingBusiness.testWs();
+        return "ok!";
     }
 }

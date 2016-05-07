@@ -55,6 +55,8 @@ dependencies {
 
     compile 'org.springframework.boot:spring-boot-starter-mobile' // site preference
 
+    compile 'org.springframework.ws:spring-ws-core' // spring webservice
+
     testCompile 'junit:junit'
 }
 

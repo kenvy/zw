@@ -43,4 +43,6 @@ public interface IGreetingBusiness {
     void testMongodb();
 
     void testAsy();
+
+    void testWs();
 }
