@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>ForecastReturn complex typeçš„ Java ç±»ã€‚
+ * <p>ForecastReturn complex typeµÄ Java Àà¡£
  * 
- * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
+ * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
  * 
  * <pre>
  * &lt;complexType name="ForecastReturn">
@@ -56,7 +56,7 @@ public class ForecastReturn {
     protected ArrayOfForecast forecastResult;
 
     /**
-     * è·å–successå±æ€§çš„å€¼ã€‚
+     * »ñÈ¡successÊôĞÔµÄÖµ¡£
      * 
      */
     public boolean isSuccess() {
@@ -64,7 +64,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è®¾ç½®successå±æ€§çš„å€¼ã€‚
+     * ÉèÖÃsuccessÊôĞÔµÄÖµ¡£
      * 
      */
     public void setSuccess(boolean value) {
@@ -72,7 +72,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è·å–responseTextå±æ€§çš„å€¼ã€‚
+     * »ñÈ¡responseTextÊôĞÔµÄÖµ¡£
      * 
      * @return
      *     possible object is
@@ -84,7 +84,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è®¾ç½®responseTextå±æ€§çš„å€¼ã€‚
+     * ÉèÖÃresponseTextÊôĞÔµÄÖµ¡£
      * 
      * @param value
      *     allowed object is
@@ -96,7 +96,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è·å–stateå±æ€§çš„å€¼ã€‚
+     * »ñÈ¡stateÊôĞÔµÄÖµ¡£
      * 
      * @return
      *     possible object is
@@ -108,7 +108,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è®¾ç½®stateå±æ€§çš„å€¼ã€‚
+     * ÉèÖÃstateÊôĞÔµÄÖµ¡£
      * 
      * @param value
      *     allowed object is
@@ -120,7 +120,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è·å–cityå±æ€§çš„å€¼ã€‚
+     * »ñÈ¡cityÊôĞÔµÄÖµ¡£
      * 
      * @return
      *     possible object is
@@ -132,7 +132,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è®¾ç½®cityå±æ€§çš„å€¼ã€‚
+     * ÉèÖÃcityÊôĞÔµÄÖµ¡£
      * 
      * @param value
      *     allowed object is
@@ -144,7 +144,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è·å–weatherStationCityå±æ€§çš„å€¼ã€‚
+     * »ñÈ¡weatherStationCityÊôĞÔµÄÖµ¡£
      * 
      * @return
      *     possible object is
@@ -156,7 +156,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è®¾ç½®weatherStationCityå±æ€§çš„å€¼ã€‚
+     * ÉèÖÃweatherStationCityÊôĞÔµÄÖµ¡£
      * 
      * @param value
      *     allowed object is
@@ -168,7 +168,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è·å–forecastResultå±æ€§çš„å€¼ã€‚
+     * »ñÈ¡forecastResultÊôĞÔµÄÖµ¡£
      * 
      * @return
      *     possible object is
@@ -180,7 +180,7 @@ public class ForecastReturn {
     }
 
     /**
-     * è®¾ç½®forecastResultå±æ€§çš„å€¼ã€‚
+     * ÉèÖÃforecastResultÊôĞÔµÄÖµ¡£
      * 
      * @param value
      *     allowed object is

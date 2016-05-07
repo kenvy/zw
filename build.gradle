@@ -57,6 +57,8 @@ dependencies {
 
     compile 'org.springframework.ws:spring-ws-core' // spring webservice
 
+    compile 'org.springframework.boot:spring-boot-starter-data-rest' // accessing-mongodb-data-rest
+
     testCompile 'junit:junit'
 }
 

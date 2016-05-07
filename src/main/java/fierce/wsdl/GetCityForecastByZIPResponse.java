@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>anonymous complex typeçš„ Java ç±»ã€‚
+ * <p>anonymous complex typeµÄ Java Àà¡£
  * 
- * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
+ * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
  * 
  * <pre>
  * &lt;complexType>
@@ -38,7 +38,7 @@ public class GetCityForecastByZIPResponse {
     protected ForecastReturn getCityForecastByZIPResult;
 
     /**
-     * è·å–getCityForecastByZIPResultå±æ€§çš„å€¼ã€‚
+     * »ñÈ¡getCityForecastByZIPResultÊôĞÔµÄÖµ¡£
      * 
      * @return
      *     possible object is
@@ -50,7 +50,7 @@ public class GetCityForecastByZIPResponse {
     }
 
     /**
-     * è®¾ç½®getCityForecastByZIPResultå±æ€§çš„å€¼ã€‚
+     * ÉèÖÃgetCityForecastByZIPResultÊôĞÔµÄÖµ¡£
      * 
      * @param value
      *     allowed object is
