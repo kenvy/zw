@@ -2,10 +2,12 @@
   <library name="Gradle: org.springframework.data:spring-data-gemfire:1.7.4.RELEASE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-gemfire/1.7.4.RELEASE/3b3050e944826e7c404cabaea72070be5290ae20/spring-data-gemfire-1.7.4.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/native/caches/modules-2/files-2.1/org.springframework.data/spring-data-gemfire/1.7.4.RELEASE/3b3050e944826e7c404cabaea72070be5290ae20/spring-data-gemfire-1.7.4.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-gemfire/1.7.4.RELEASE/f2e627651fcdb25d54f92ef36f0e1990610e5925/spring-data-gemfire-1.7.4.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/native/caches/modules-2/files-2.1/org.springframework.data/spring-data-gemfire/1.7.4.RELEASE/f2e627651fcdb25d54f92ef36f0e1990610e5925/spring-data-gemfire-1.7.4.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

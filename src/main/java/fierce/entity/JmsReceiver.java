@@ -7,7 +7,8 @@ import org.springframework.util.FileSystemUtils;
 import java.io.File;
 
 /**
- * Created by Fierce on 2016/5/2.
+ * Created by Fierce on 2016/5/2
+ * Email: yaoyaolingma@126.com
  */
 @Component
 public class JmsReceiver {

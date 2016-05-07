@@ -4,7 +4,7 @@ buildscript {
         maven { url "https://repo.spring.io/libs-release" }
     }
     dependencies {
-        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE'
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.3.4.RELEASE'
     }
 }
 
@@ -52,6 +52,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-data-mongodb' // work with mongodb
 
     compile 'org.springframework.boot:spring-boot-starter-actuator' // http://localhost:8099/actuator
+
+    compile 'org.springframework.boot:spring-boot-starter-mobile' // site preference
 
     testCompile 'junit:junit'
 }
