@@ -63,6 +63,8 @@ dependencies {
 
     compile 'org.springframework.boot:spring-boot-starter-thymeleaf' // upload file
 
+    compile 'org.springframework.boot:spring-boot-starter-redis' // spring data redis message
+
     testCompile 'junit:junit'
 }
 

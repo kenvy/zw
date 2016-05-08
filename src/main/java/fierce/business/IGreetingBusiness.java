@@ -45,4 +45,6 @@ public interface IGreetingBusiness {
     void testAsy();
 
     void testWs();
+
+    void testRedisMsg();
 }

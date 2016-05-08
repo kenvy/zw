@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.neo4j.core.GraphDatabase;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,7 @@ import org.springframework.util.FileSystemUtils;
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by zw on 2016/4/21
@@ -42,6 +44,12 @@ public class GreetingService implements IGreetingService {
 
     @Autowired
     CustomerMongodbRepository customerMongodbRepository;
+
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
+
+    @Autowired
+    CountDownLatch countDownLatch;
 
     private static final Logger log = LoggerFactory.getLogger("GreetingService");
 
@@ -149,4 +157,16 @@ public class GreetingService implements IGreetingService {
         customerMongodbRepository.findByLastName("Smith").forEach(System.out::println);
     }
 
+    @Override
+    public void testRedisMsg() {
+        log.info("Sending message...");
+
+        stringRedisTemplate.convertAndSend("chat", "Hello from Redis!");
+
+        try {
+            countDownLatch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

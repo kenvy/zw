@@ -112,6 +112,11 @@ public class GreetingBusiness implements IGreetingBusiness {
 
     @Override
     public void testWs() {
-        /*weatherService.testWs();*/
+        weatherService.testWs();
+    }
+
+    @Override
+    public void testRedisMsg() {
+        greetingService.testRedisMsg();
     }
 }

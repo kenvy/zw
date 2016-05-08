@@ -19,4 +19,6 @@ public interface IGreetingService {
     void testJms();
 
     void testMongodb();
+
+    void testRedisMsg();
 }

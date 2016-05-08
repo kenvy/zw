@@ -112,4 +112,10 @@ public class GreetingController {
         greetingBusiness.testWs();
         return "ok!";
     }
+
+    @RequestMapping("/testRedisMsg")
+    public String testRedisMsg(){
+        greetingBusiness.testRedisMsg();
+        return "ok!";
+    }
 }
