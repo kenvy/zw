@@ -13,6 +13,8 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
 jar {
     baseName = 'fierce'
     version = '3.0'
