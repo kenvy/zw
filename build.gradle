@@ -61,6 +61,8 @@ dependencies {
 
     compile 'org.springframework.boot:spring-boot-starter-data-rest' // accessing-mongodb-data-rest
 
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf' // upload file
+
     testCompile 'junit:junit'
 }
 
