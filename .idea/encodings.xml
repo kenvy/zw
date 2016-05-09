@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/business/IGreetingBusiness.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/dao/impl/WeatherClient.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/service/impl/GreetingService.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/service/impl/WeatherService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ArrayOfForecast.java" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ArrayOfWeatherDescription.java" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Forecast.java" charset="GB2312" />

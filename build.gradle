@@ -65,9 +65,11 @@ dependencies {
 
     compile 'org.springframework.boot:spring-boot-starter-redis' // spring data redis message
 
+    compile 'org.springframework.social:spring-social-twitter' // access twitter
+
     testCompile 'junit:junit'
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
+    gradleVersion = '2.9'
 }
