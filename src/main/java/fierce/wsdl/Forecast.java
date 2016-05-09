@@ -10,9 +10,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Forecast complex typeµÄ Java Àà¡£
+ * <p>Forecast complex typeçš„ Java ç±»ã€‚
  * 
- * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+ * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
  * 
  * <pre>
  * &lt;complexType name="Forecast">
@@ -55,7 +55,7 @@ public class Forecast {
     protected POP probabilityOfPrecipiation;
 
     /**
-     * »ñÈ¡dateÊôĞÔµÄÖµ¡£
+     * è·å–dateå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -67,7 +67,7 @@ public class Forecast {
     }
 
     /**
-     * ÉèÖÃdateÊôĞÔµÄÖµ¡£
+     * è®¾ç½®dateå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -79,7 +79,7 @@ public class Forecast {
     }
 
     /**
-     * »ñÈ¡weatherIDÊôĞÔµÄÖµ¡£
+     * è·å–weatherIDå±æ€§çš„å€¼ã€‚
      * 
      */
     public short getWeatherID() {
@@ -87,7 +87,7 @@ public class Forecast {
     }
 
     /**
-     * ÉèÖÃweatherIDÊôĞÔµÄÖµ¡£
+     * è®¾ç½®weatherIDå±æ€§çš„å€¼ã€‚
      * 
      */
     public void setWeatherID(short value) {
@@ -95,7 +95,7 @@ public class Forecast {
     }
 
     /**
-     * »ñÈ¡desciptionÊôĞÔµÄÖµ¡£
+     * è·å–desciptionå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -107,7 +107,7 @@ public class Forecast {
     }
 
     /**
-     * ÉèÖÃdesciptionÊôĞÔµÄÖµ¡£
+     * è®¾ç½®desciptionå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -119,7 +119,7 @@ public class Forecast {
     }
 
     /**
-     * »ñÈ¡temperaturesÊôĞÔµÄÖµ¡£
+     * è·å–temperatureså±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -131,7 +131,7 @@ public class Forecast {
     }
 
     /**
-     * ÉèÖÃtemperaturesÊôĞÔµÄÖµ¡£
+     * è®¾ç½®temperatureså±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -143,7 +143,7 @@ public class Forecast {
     }
 
     /**
-     * »ñÈ¡probabilityOfPrecipiationÊôĞÔµÄÖµ¡£
+     * è·å–probabilityOfPrecipiationå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -155,7 +155,7 @@ public class Forecast {
     }
 
     /**
-     * ÉèÖÃprobabilityOfPrecipiationÊôĞÔµÄÖµ¡£
+     * è®¾ç½®probabilityOfPrecipiationå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is

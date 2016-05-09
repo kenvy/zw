@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>POP complex typeµÄ Java Àà¡£
+ * <p>POP complex typeçš„ Java ç±»ã€‚
  * 
- * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+ * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
  * 
  * <pre>
  * &lt;complexType name="POP">
@@ -40,7 +40,7 @@ public class POP {
     protected String daytime;
 
     /**
-     * »ñÈ¡nighttimeÊôĞÔµÄÖµ¡£
+     * è·å–nighttimeå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class POP {
     }
 
     /**
-     * ÉèÖÃnighttimeÊôĞÔµÄÖµ¡£
+     * è®¾ç½®nighttimeå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class POP {
     }
 
     /**
-     * »ñÈ¡daytimeÊôĞÔµÄÖµ¡£
+     * è·å–daytimeå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class POP {
     }
 
     /**
-     * ÉèÖÃdaytimeÊôĞÔµÄÖµ¡£
+     * è®¾ç½®daytimeå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is

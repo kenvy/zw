@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>temp complex typeµÄ Java Àà¡£
+ * <p>temp complex typeçš„ Java ç±»ã€‚
  * 
- * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+ * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
  * 
  * <pre>
  * &lt;complexType name="temp">
@@ -40,7 +40,7 @@ public class Temp {
     protected String daytimeHigh;
 
     /**
-     * »ñÈ¡morningLowÊôĞÔµÄÖµ¡£
+     * è·å–morningLowå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class Temp {
     }
 
     /**
-     * ÉèÖÃmorningLowÊôĞÔµÄÖµ¡£
+     * è®¾ç½®morningLowå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class Temp {
     }
 
     /**
-     * »ñÈ¡daytimeHighÊôĞÔµÄÖµ¡£
+     * è·å–daytimeHighå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class Temp {
     }
 
     /**
-     * ÉèÖÃdaytimeHighÊôĞÔµÄÖµ¡£
+     * è®¾ç½®daytimeHighå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is

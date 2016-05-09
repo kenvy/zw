@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ArrayOfForecast.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ArrayOfWeatherDescription.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Forecast.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ForecastReturn.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetCityForecastByZIP.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetCityForecastByZIPResponse.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetCityWeatherByZIP.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetCityWeatherByZIPResponse.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetWeatherInformation.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetWeatherInformationResponse.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ObjectFactory.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/POP.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Temp.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Weather.asmx" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Weather.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherDescription.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherHttpGet.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherHttpPost.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherReturn.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherSoap.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/package-info.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/build.gradle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/Application.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/conf/AsyncConfiguration.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/controller/GreetingController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/dao/impl/GreetingDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ArrayOfForecast.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ArrayOfWeatherDescription.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Forecast.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ForecastReturn.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetCityForecastByZIP.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetCityForecastByZIPResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetCityWeatherByZIP.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetCityWeatherByZIPResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetWeatherInformation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/GetWeatherInformationResponse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/ObjectFactory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/POP.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Temp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Weather.asmx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/Weather.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherDescription.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherHttpGet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherHttpPost.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherReturn.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/WeatherSoap.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/fierce/wsdl/package-info.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

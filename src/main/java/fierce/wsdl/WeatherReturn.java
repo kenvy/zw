@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>WeatherReturn complex typeµÄ Java Àà¡£
+ * <p>WeatherReturn complex typeçš„ Java ç±»ã€‚
  * 
- * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+ * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
  * 
  * <pre>
  * &lt;complexType name="WeatherReturn">
@@ -88,7 +88,7 @@ public class WeatherReturn {
     protected String remarks;
 
     /**
-     * »ñÈ¡successÊôĞÔµÄÖµ¡£
+     * è·å–successå±æ€§çš„å€¼ã€‚
      * 
      */
     public boolean isSuccess() {
@@ -96,7 +96,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃsuccessÊôĞÔµÄÖµ¡£
+     * è®¾ç½®successå±æ€§çš„å€¼ã€‚
      * 
      */
     public void setSuccess(boolean value) {
@@ -104,7 +104,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡responseTextÊôĞÔµÄÖµ¡£
+     * è·å–responseTextå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -116,7 +116,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃresponseTextÊôĞÔµÄÖµ¡£
+     * è®¾ç½®responseTextå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -128,7 +128,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡stateÊôĞÔµÄÖµ¡£
+     * è·å–stateå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -140,7 +140,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃstateÊôĞÔµÄÖµ¡£
+     * è®¾ç½®stateå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -152,7 +152,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡cityÊôĞÔµÄÖµ¡£
+     * è·å–cityå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -164,7 +164,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃcityÊôĞÔµÄÖµ¡£
+     * è®¾ç½®cityå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -176,7 +176,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡weatherStationCityÊôĞÔµÄÖµ¡£
+     * è·å–weatherStationCityå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -188,7 +188,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃweatherStationCityÊôĞÔµÄÖµ¡£
+     * è®¾ç½®weatherStationCityå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -200,7 +200,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡weatherIDÊôĞÔµÄÖµ¡£
+     * è·å–weatherIDå±æ€§çš„å€¼ã€‚
      * 
      */
     public short getWeatherID() {
@@ -208,7 +208,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃweatherIDÊôĞÔµÄÖµ¡£
+     * è®¾ç½®weatherIDå±æ€§çš„å€¼ã€‚
      * 
      */
     public void setWeatherID(short value) {
@@ -216,7 +216,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡descriptionÊôĞÔµÄÖµ¡£
+     * è·å–descriptionå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -228,7 +228,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃdescriptionÊôĞÔµÄÖµ¡£
+     * è®¾ç½®descriptionå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -240,7 +240,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡temperatureÊôĞÔµÄÖµ¡£
+     * è·å–temperatureå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -252,7 +252,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃtemperatureÊôĞÔµÄÖµ¡£
+     * è®¾ç½®temperatureå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -264,7 +264,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡relativeHumidityÊôĞÔµÄÖµ¡£
+     * è·å–relativeHumidityå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -276,7 +276,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃrelativeHumidityÊôĞÔµÄÖµ¡£
+     * è®¾ç½®relativeHumidityå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -288,7 +288,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡windÊôĞÔµÄÖµ¡£
+     * è·å–windå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -300,7 +300,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃwindÊôĞÔµÄÖµ¡£
+     * è®¾ç½®windå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -312,7 +312,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡pressureÊôĞÔµÄÖµ¡£
+     * è·å–pressureå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -324,7 +324,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃpressureÊôĞÔµÄÖµ¡£
+     * è®¾ç½®pressureå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -336,7 +336,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡visibilityÊôĞÔµÄÖµ¡£
+     * è·å–visibilityå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -348,7 +348,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃvisibilityÊôĞÔµÄÖµ¡£
+     * è®¾ç½®visibilityå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -360,7 +360,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡windChillÊôĞÔµÄÖµ¡£
+     * è·å–windChillå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -372,7 +372,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃwindChillÊôĞÔµÄÖµ¡£
+     * è®¾ç½®windChillå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -384,7 +384,7 @@ public class WeatherReturn {
     }
 
     /**
-     * »ñÈ¡remarksÊôĞÔµÄÖµ¡£
+     * è·å–remarkså±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -396,7 +396,7 @@ public class WeatherReturn {
     }
 
     /**
-     * ÉèÖÃremarksÊôĞÔµÄÖµ¡£
+     * è®¾ç½®remarkså±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is

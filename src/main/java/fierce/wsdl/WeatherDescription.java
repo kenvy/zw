@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>WeatherDescription complex typeµÄ Java Àà¡£
+ * <p>WeatherDescription complex typeçš„ Java ç±»ã€‚
  * 
- * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+ * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
  * 
  * <pre>
  * &lt;complexType name="WeatherDescription">
@@ -44,7 +44,7 @@ public class WeatherDescription {
     protected String pictureURL;
 
     /**
-     * »ñÈ¡weatherIDÊôĞÔµÄÖµ¡£
+     * è·å–weatherIDå±æ€§çš„å€¼ã€‚
      * 
      */
     public short getWeatherID() {
@@ -52,7 +52,7 @@ public class WeatherDescription {
     }
 
     /**
-     * ÉèÖÃweatherIDÊôĞÔµÄÖµ¡£
+     * è®¾ç½®weatherIDå±æ€§çš„å€¼ã€‚
      * 
      */
     public void setWeatherID(short value) {
@@ -60,7 +60,7 @@ public class WeatherDescription {
     }
 
     /**
-     * »ñÈ¡descriptionÊôĞÔµÄÖµ¡£
+     * è·å–descriptionå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -72,7 +72,7 @@ public class WeatherDescription {
     }
 
     /**
-     * ÉèÖÃdescriptionÊôĞÔµÄÖµ¡£
+     * è®¾ç½®descriptionå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
@@ -84,7 +84,7 @@ public class WeatherDescription {
     }
 
     /**
-     * »ñÈ¡pictureURLÊôĞÔµÄÖµ¡£
+     * è·å–pictureURLå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
@@ -96,7 +96,7 @@ public class WeatherDescription {
     }
 
     /**
-     * ÉèÖÃpictureURLÊôĞÔµÄÖµ¡£
+     * è®¾ç½®pictureURLå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
