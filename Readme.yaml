@@ -23,6 +23,9 @@ Rabbitmq:
    version: 3.6.1
 
 # Mongodb
-mongodb:
+Mongodb:
    version: 3.2.6
 
+# Redis
+Redis:
+   version: 2.8(win)
