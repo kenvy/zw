@@ -67,6 +67,8 @@ dependencies {
 
     compile 'org.springframework.social:spring-social-twitter' // access twitter
 
+    compile 'org.apache.tomcat.embed:tomcat-embed-el' // validate form input
+
     testCompile 'junit:junit'
 }
 
