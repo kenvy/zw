@@ -21,4 +21,6 @@ public interface IGreetingService {
     void testMongodb();
 
     void testRedisMsg();
+
+    void testGemfireCrud();
 }

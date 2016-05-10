@@ -119,4 +119,9 @@ public class GreetingBusiness implements IGreetingBusiness {
     public void testRedisMsg() {
         greetingService.testRedisMsg();
     }
+
+    @Override
+    public void testGemfireCrud() {
+        greetingService.testGemfireCrud();
+    }
 }

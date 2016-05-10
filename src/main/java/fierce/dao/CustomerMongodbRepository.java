@@ -1,7 +1,6 @@
 package fierce.dao;
 
 import fierce.entity.CustomerMongodb;
-import org.apache.lucene.search.Sort;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

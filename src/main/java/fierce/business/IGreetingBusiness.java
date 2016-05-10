@@ -47,4 +47,6 @@ public interface IGreetingBusiness {
     void testWs();
 
     void testRedisMsg();
+
+    void testGemfireCrud();
 }

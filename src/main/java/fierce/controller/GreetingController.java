@@ -81,7 +81,7 @@ public class GreetingController {
         return "ok!";
     }
 
-    @RequestMapping("/testGemfire")
+    @RequestMapping("/testGemfireCache")
     public QuoteGemfire testGemfire(@RequestParam(value = "id", required = true, defaultValue = "1") Long id) {
         return greetingBusiness.testGemfire(id);
     }
@@ -116,6 +116,12 @@ public class GreetingController {
     @RequestMapping("/testRedisMsg")
     public String testRedisMsg(){
         greetingBusiness.testRedisMsg();
+        return "ok!";
+    }
+
+    @RequestMapping("/testGemfireCrud")
+    public String testGemfireCrud(){
+        greetingBusiness.testGemfireCrud();
         return "ok!";
     }
 }

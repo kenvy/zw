@@ -2,11 +2,15 @@ package fierce.conf;
 
 import com.gemstone.gemfire.cache.Cache;
 import com.gemstone.gemfire.cache.GemFireCache;
+import fierce.entity.PersonGemfire;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.FilterType;
 import org.springframework.data.gemfire.CacheFactoryBean;
 import org.springframework.data.gemfire.LocalRegionFactoryBean;
+import org.springframework.data.gemfire.repository.config.EnableGemfireRepositories;
 import org.springframework.data.gemfire.support.GemfireCacheManager;
 
 import java.util.Properties;
@@ -16,15 +20,22 @@ import java.util.Properties;
  * Email: yaoyaolingma@126.com
  */
 @Configuration
-@EnableCaching
+@EnableCaching // cache
+@EnableGemfireRepositories(
+        basePackages = "fierce",
+        includeFilters =
+        @ComponentScan.Filter(
+                type = FilterType.REGEX,
+                pattern = "fierce.dao.PersonGemfireRepository")) // gemfire crud
+
 public class GemfireConfiguration {
 
     @Bean
     Properties gemfireProperties() {
         Properties gemfireProperties = new Properties();
-        gemfireProperties.setProperty("name", "DataGemFireCachingApplication");
+        gemfireProperties.setProperty("name", "DataGemFireApplication");
         gemfireProperties.setProperty("mcast-port", "0");
-        gemfireProperties.setProperty("log-level", "warning");// [lowest to highest are fine, config, info, warning, error, severe, and none.]
+        gemfireProperties.setProperty("log-level", "config");
         return gemfireProperties;
     }
 
@@ -37,13 +48,13 @@ public class GemfireConfiguration {
     }
 
     @Bean
-    LocalRegionFactoryBean<Integer, Integer> quotesRegion(GemFireCache cache) {
-        LocalRegionFactoryBean<Integer, Integer> quotesRegion = new LocalRegionFactoryBean<>();
-        quotesRegion.setCache(cache);
-        quotesRegion.setClose(false);
-        quotesRegion.setName("Quotes");
-        quotesRegion.setPersistent(false);
-        return quotesRegion;
+    LocalRegionFactoryBean<String, PersonGemfire> helloRegion(final GemFireCache cache) {
+        LocalRegionFactoryBean<String, PersonGemfire> helloRegion = new LocalRegionFactoryBean<>();
+        helloRegion.setCache(cache);
+        helloRegion.setClose(false);
+        helloRegion.setName("Quotes");
+        helloRegion.setPersistent(false);
+        return helloRegion;
     }
 
     @Bean

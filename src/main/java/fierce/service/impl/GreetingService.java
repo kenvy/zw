@@ -2,10 +2,12 @@ package fierce.service.impl;
 
 import fierce.dao.CustomerMongodbRepository;
 import fierce.dao.IGreetingDao;
+import fierce.dao.PersonGemfireRepository;
 import fierce.dao.PersonRepository;
 import fierce.entity.Customer;
 import fierce.entity.CustomerMongodb;
 import fierce.entity.Person;
+import fierce.entity.PersonGemfire;
 import fierce.service.IGreetingService;
 import org.neo4j.graphdb.Transaction;
 import org.slf4j.Logger;
@@ -50,6 +52,9 @@ public class GreetingService implements IGreetingService {
 
     @Autowired
     CountDownLatch countDownLatch;
+
+    @Autowired
+    PersonGemfireRepository personGemfireRepository;
 
     private static final Logger log = LoggerFactory.getLogger("GreetingService");
 
@@ -167,6 +172,42 @@ public class GreetingService implements IGreetingService {
             countDownLatch.await();
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void testGemfireCrud() {
+        PersonGemfire alice = new PersonGemfire("Alice", 40);
+        PersonGemfire bob = new PersonGemfire("Baby Bob", 1);
+        PersonGemfire carol = new PersonGemfire("Teen Carol", 13);
+
+        System.out.println("Before linking up with Gemfire...");
+        for (PersonGemfire person : new PersonGemfire[]{alice, bob, carol}) {
+            System.out.println("\t" + person);
+        }
+
+        personGemfireRepository.save(alice);
+        personGemfireRepository.save(bob);
+        personGemfireRepository.save(carol);
+
+        System.out.println("Lookup each person by name...");
+        for (String name : new String[]{alice.name, bob.name, carol.name}) {
+            System.out.println("\t" + personGemfireRepository.findByName(name));
+        }
+
+        System.out.println("Adults (over 18):");
+        for (PersonGemfire person : personGemfireRepository.findByAgeGreaterThan(18)) {
+            System.out.println("\t" + person);
+        }
+
+        System.out.println("Babies (less than 5):");
+        for (PersonGemfire person : personGemfireRepository.findByAgeLessThan(5)) {
+            System.out.println("\t" + person);
+        }
+
+        System.out.println("Teens (between 12 and 20):");
+        for (PersonGemfire person : personGemfireRepository.findByAgeGreaterThanAndAgeLessThan(12, 20)) {
+            System.out.println("\t" + person);
         }
     }
 }
