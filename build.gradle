@@ -72,6 +72,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-batch' // batch service
     compile 'org.hsqldb:hsqldb'
 
+    compile 'org.springframework:spring-tx' // managing transaction
+
     testCompile 'junit:junit'
 }
 
