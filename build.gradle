@@ -74,6 +74,9 @@ dependencies {
 
     compile 'org.springframework:spring-tx' // managing transaction
 
+    compile 'org.springframework.boot:spring-boot-starter-websocket'
+    compile 'org.springframework:spring-messaging'
+
     testCompile 'junit:junit'
 }
 
