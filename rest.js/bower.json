@@ -1,0 +1,23 @@
+{
+  "name": "rest.js",
+  "homepage": "https://github.com/kenvy/zw",
+  "authors": [
+    "zhangwei <yaoyaolingma@126.com>"
+  ],
+  "description": "Rest js consumes rest service.",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rest": "~1",
+    "curl": "~0.8"
+  }
+}
