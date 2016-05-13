@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : zw:sencha-touch : sencha-touch.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/sencha-touch/exploded/sencha-touch.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/sencha-touch" />
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="sencha-touch/web/Web Gradle : sencha-touch.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sencha-touch" />
+          <element id="dir-copy" path="$PROJECT_DIR$/sencha-touch/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy-all:2.3.11" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/sencha-touch/exploded/sencha-touch.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
