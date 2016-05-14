@@ -1,0 +1,24 @@
+{
+  "name": "msgs.js",
+  "homepage": "https://github.com/kenvy/zw",
+  "authors": [
+    "zhangwei <yaoyaolingma@126.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "msgs": "dev",
+    "curl": "~0.8",
+    "sockjs": "~0.3",
+    "stomp-websocket": "~2.0"
+  }
+}

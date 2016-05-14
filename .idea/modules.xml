@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/msgs.js/msgs.js.iml" filepath="$PROJECT_DIR$/msgs.js/msgs.js.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest.js/rest.js.iml" filepath="$PROJECT_DIR$/rest.js/rest.js.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon/ribbon.iml" filepath="$PROJECT_DIR$/ribbon/ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/sencha-touch/sencha-touch.iml" filepath="$PROJECT_DIR$/sencha-touch/sencha-touch.iml" />
