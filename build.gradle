@@ -79,6 +79,8 @@ dependencies {
 
     compile 'org.springframework.boot:spring-boot-starter-mobile' // spring mobile web content
 
+    compile 'org.springframework.mobile:spring-mobile-device'
+
     testCompile 'junit:junit'
 }
 

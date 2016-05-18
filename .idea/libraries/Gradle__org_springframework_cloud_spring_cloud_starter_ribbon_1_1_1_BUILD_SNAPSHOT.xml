@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: org.springframework.cloud:spring-cloud-starter-ribbon:1.1.1.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-ribbon/1.1.1.BUILD-SNAPSHOT/aaf0b7b710aa098f3da9a0cc30f05eac3b2a2c30/spring-cloud-starter-ribbon-1.1.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-ribbon/1.1.1.BUILD-SNAPSHOT/aa48d1c32f53a432b501d8f50d9a70bef96bbd2c/spring-cloud-starter-ribbon-1.1.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-ribbon/1.1.1.BUILD-SNAPSHOT/c48a7c99eecf58728cdd1d13c37fcb160a29cb15/spring-cloud-starter-ribbon-1.1.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-ribbon/1.1.1.BUILD-SNAPSHOT/c39b2182ff9316b471900d6f6a9c996dc906d95f/spring-cloud-starter-ribbon-1.1.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
