@@ -270,5 +270,9 @@
     <orderEntry type="library" name="Gradle: org.apache.directory.server:apacheds-xdbm-base:1.5.5" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.directory.server:apacheds-bootstrap-extract:1.5.5" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.directory.shared:shared-cursor:0.9.15" level="project" />
+    <orderEntry type="library" name="Gradle: bouncycastle:bcprov-jdk15:140" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.directory.server:apacheds-schema-extras:1.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.directory.server:apacheds-jdbm:1.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.directory.server:apacheds-core-avl:1.5.5" level="project" />
   </component>
 </module>
