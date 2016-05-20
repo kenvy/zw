@@ -18,6 +18,9 @@ apply plugin: 'spring-boot'
 jar {
     baseName = 'fierce'
     version = '3.0'
+    manifest {
+        attributes 'Main-Class': 'fierce.Application'
+    }
 }
 
 repositories {
@@ -81,11 +84,14 @@ dependencies {
 
     compile 'org.springframework.mobile:spring-mobile-device'
 
-    compile("org.springframework.boot:spring-boot-starter-web") // spring security ldap
-    compile("org.springframework.boot:spring-boot-starter-security")
-    compile("org.springframework.security:spring-security-ldap")
-    compile("org.springframework:spring-tx")
-    compile("org.apache.directory.server:apacheds-server-jndi:1.5.5")
+    compile 'org.springframework.boot:spring-boot-starter-web' // spring security ldap
+    compile 'org.springframework.boot:spring-boot-starter-security'
+    compile 'org.springframework.security:spring-security-ldap'
+    compile 'org.springframework:spring-tx'
+    compile 'org.apache.directory.server:apacheds-server-jndi:1.5.5'
+
+    compile 'org.springframework.boot:spring-boot-starter-integration' // spring integration
+    compile 'org.springframework.integration:spring-integration-feed'
 
     testCompile 'junit:junit'
 }
