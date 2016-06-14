@@ -14,6 +14,7 @@ Spring:
 
 Orm:
    10. Java Persistence With Mybatis 3
+   11. Java Hibernate Cookbook
 
 Other:
    Cache & Nosql & Search Engine
