@@ -2,7 +2,6 @@
   <library name="Gradle: org.hdrhistogram:HdrHistogram:2.1.7">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/native/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.7/de7fc22a215f3881a673591b35790218ea3039a6/HdrHistogram-2.1.7.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.7/de7fc22a215f3881a673591b35790218ea3039a6/HdrHistogram-2.1.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Gradle: org.parboiled:parboiled-scala_2.10:1.1.7">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.parboiled/parboiled-scala_2.10/1.1.7/c20d486f11cc115c0df2ebc2aefb2773f9f9fb11/parboiled-scala_2.10-1.1.7.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/native/caches/modules-2/files-2.1/org.parboiled/parboiled-scala_2.10/1.1.7/c20d486f11cc115c0df2ebc2aefb2773f9f9fb11/parboiled-scala_2.10-1.1.7.jar!/" />
     </CLASSES>
     <JAVADOC />

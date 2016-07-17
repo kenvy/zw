@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Gradle: org.neo4j:neo4j-udc:2.2.5">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-udc/2.2.5/c8e618b7c5275b3d565678894055386fb6b68ed/neo4j-udc-2.2.5.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/native/caches/modules-2/files-2.1/org.neo4j/neo4j-udc/2.2.5/c8e618b7c5275b3d565678894055386fb6b68ed/neo4j-udc-2.2.5.jar!/" />
     </CLASSES>
     <JAVADOC />
